@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Push') {
             steps {
-                sh 'docker push samernasser/kh-helloworld:$BUILD_NUMBER'
+                sh 'docker push samernasser/hk-helloworld:$BUILD_NUMBER'
             }
         }
     }
