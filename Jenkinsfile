@@ -26,12 +26,12 @@ pipeline {
         }
       stage('Tag') {
             steps {
-                sh 'docker tag helloworld:$BUILD_NUMBER samernasser/hk-helloworld:$BUILD_NUMBER'
+                sh 'docker tag helloworld:$BUILD_NUMBER samernasser/sn-helloworld:$BUILD_NUMBER'
             }
         }
         stage('Push') {
             steps {
-                sh 'docker push samernasser/hk-helloworld:$BUILD_NUMBER'
+                sh 'docker push samernasser/sn-helloworld:$BUILD_NUMBER'
             }
         }
     }
